@@ -3,9 +3,12 @@ package com.masterdoc.pojo;
 import java.io.Serializable;
 import java.util.List;
 
+import org.codehaus.jackson.map.annotate.JsonSerialize;
+
 /**
  * User: nlenouvel
  */
+@JsonSerialize(include = JsonSerialize.Inclusion.NON_NULL)
 public class MasterDoc implements Serializable {
 
   private List<AbstractEntity> entities;

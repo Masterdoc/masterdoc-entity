@@ -1,6 +1,13 @@
 package com.masterdoc.pojo;
 
+import org.codehaus.jackson.map.annotate.JsonSerialize;
 
+/**
+ * 
+ * @author nlenouvel
+ *
+ */
+@JsonSerialize(include = JsonSerialize.Inclusion.NON_NULL)
 public class MasterDocMetadata {
 
   /** MasterDoc generation date. */

@@ -2,8 +2,10 @@ package com.masterdoc.pojo;
 
 import java.io.Serializable;
 
-import org.codehaus.jackson.annotate.*;
+import org.codehaus.jackson.annotate.JsonIgnore;
+import org.codehaus.jackson.annotate.JsonSubTypes;
 import org.codehaus.jackson.annotate.JsonSubTypes.Type;
+import org.codehaus.jackson.annotate.JsonTypeInfo;
 import org.codehaus.jackson.map.annotate.JsonSerialize;
 
 @JsonTypeInfo(
@@ -28,10 +30,19 @@ public abstract class AbstractEntity implements Serializable {
   }
 
   /**
-   * @param name the name to set
+   * @param name
+   *          the name to set
    */
   public void setName(String name) {
     this.name = name;
+  }
+
+  public boolean isEnumeration() {
+    return enumeration;
+  }
+
+  public void setEnumeration(boolean enumeration) {
+    this.enumeration = enumeration;
   }
 
   @Override

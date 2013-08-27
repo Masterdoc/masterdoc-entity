@@ -19,7 +19,19 @@
 			<name>Nicolas LENOUVEL</name>
 		</developer>
 	</developers>
-	<properties>
+    <distributionManagement>
+        <snapshotRepository>
+            <id>snapshot</id>
+            <name>Cloudbees Snapshot</name>
+            <url>https://repository-masterdoc.forge.cloudbees.com/snapshot/</url>
+        </snapshotRepository>
+        <repository>
+            <id>release</id>
+            <name>Cloudbees Release</name>
+            <url>https://repository-masterdoc.forge.cloudbees.com/release/</url>
+        </repository>
+    </distributionManagement>
+    <properties>
 		<jsr311-api.version>1.1.1</jsr311-api.version>
 		<jackson.version>1.9.11</jackson.version>
 	</properties>

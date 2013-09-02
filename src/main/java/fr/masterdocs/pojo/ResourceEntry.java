@@ -14,8 +14,8 @@ public class ResourceEntry implements Serializable {
 	private String path;
 	private List<Param> queryParams;
 	private List<Param> pathParams;
-	private Serializable requestEntity;
-	private Serializable responseEntity;
+	private String requestEntity;
+	private String responseEntity;
 	private String mediaTypeConsumes;
 	private String mediaTypeProduces;
 	private CamelConsumeAnnotation CamelConsume;
@@ -64,19 +64,19 @@ public class ResourceEntry implements Serializable {
 		this.pathParams = pathParams;
 	}
 
-	public Serializable getRequestEntity() {
+	public String getRequestEntity() {
 		return requestEntity;
 	}
 
-	public void setRequestEntity(Serializable requestEntity) {
+	public void setRequestEntity(String requestEntity) {
 		this.requestEntity = requestEntity;
 	}
 
-	public Serializable getResponseEntity() {
+	public String getResponseEntity() {
 		return responseEntity;
 	}
 
-	public void setResponseEntity(Serializable responseEntity) {
+	public void setResponseEntity(String responseEntity) {
 		this.responseEntity = responseEntity;
 	}
 

@@ -2,7 +2,6 @@ package fr.masterdocs.pojo;
 
 import org.codehaus.jackson.map.annotate.JsonSerialize;
 
-import java.io.Serializable;
 import java.util.Map;
 
 /**
@@ -10,7 +9,7 @@ import java.util.Map;
  */
 @JsonSerialize(include = JsonSerialize.Inclusion.NON_NULL)
 public class Entity extends AbstractEntity {
-	private Serializable superClass;
+	private String superClass;
 	private Map<String, AbstractEntity> fields;
 
 	public Entity() {
@@ -32,11 +31,11 @@ public class Entity extends AbstractEntity {
 		this.fields = fields;
 	}
 
-	public Serializable getSuperClass() {
+	public String getSuperClass() {
 		return superClass;
 	}
 
-	public void setSuperClass(Serializable superClass) {
+	public void setSuperClass(String superClass) {
 		this.superClass = superClass;
 	}
 }

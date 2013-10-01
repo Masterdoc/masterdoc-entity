@@ -1,6 +1,7 @@
 package fr.masterdocs.pojo;
 
 import java.io.Serializable;
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -8,25 +9,25 @@ import java.util.Map;
  */
 public class Resource implements Serializable {
 
-	private String rootPath;
-	private Map<String, ResourceEntry> entryList;
+  private String                           rootPath;
+  private Map<String, List<ResourceEntry>> entryList;
 
-	public Resource() {
-	}
+  public Resource() {
+  }
 
-	public String getRootPath() {
-		return rootPath;
-	}
+  public String getRootPath() {
+    return rootPath;
+  }
 
-	public void setRootPath(String rootPath) {
-		this.rootPath = rootPath;
-	}
+  public void setRootPath(String rootPath) {
+    this.rootPath = rootPath;
+  }
 
-	public Map<String, ResourceEntry> getEntryList() {
-		return entryList;
-	}
+  public Map<String, List<ResourceEntry>> getEntryList() {
+    return entryList;
+  }
 
-	public void setEntryList(Map<String, ResourceEntry> entryList) {
-		this.entryList = entryList;
-	}
+  public void setEntryList(Map<String, List<ResourceEntry>> entryList) {
+    this.entryList = entryList;
+  }
 }

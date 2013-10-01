@@ -8,6 +8,11 @@
     <version>1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
     <name>Masterdocs entity</name>
+    <parent>
+        <groupId>org.sonatype.oss</groupId>
+        <artifactId>oss-parent</artifactId>
+        <version>7</version>
+    </parent>
     <developers>
         <developer>
             <id>pleresteux</id>
@@ -20,9 +25,16 @@
             <name>Nicolas LENOUVEL</name>
         </developer>
     </developers>
+    <scm>
+        <connection>scm:git@github.com:Masterdocs/masterdoc-entity.git</connection>
+        <developerConnection>scm:git@github.com:Masterdocs/masterdoc-entity.git</developerConnection>
+        <url>git@github.com:Masterdocs/masterdoc-entity.git</url>
+    </scm>
     <properties>
         <jsr311-api.version>1.1.1</jsr311-api.version>
         <jackson.version>1.9.11</jackson.version>
+        <sonatypeOssDistMgmtSnapshotsUrl>https://oss.sonatype.org/content/repositories/snapshots/
+        </sonatypeOssDistMgmtSnapshotsUrl>
     </properties>
     <dependencies>
         <dependency>

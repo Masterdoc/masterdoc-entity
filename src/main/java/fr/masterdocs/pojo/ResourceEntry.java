@@ -20,7 +20,7 @@ public class ResourceEntry implements Serializable {
   private String                 mediaTypeProduces;
   private CamelConsumeAnnotation CamelConsume;
   private String                 fullPath;
-  private String                 methodeName;
+  private String                 methodName;
 
   public ResourceEntry() {
     this(WILDCARD, WILDCARD);
@@ -113,12 +113,12 @@ public class ResourceEntry implements Serializable {
     return fullPath;
   }
 
-  public String getMethodeName() {
-    return methodeName;
+  public String getMethodName() {
+    return methodName;
   }
 
-  public void setMethodeName(String methodeName) {
-    this.methodeName = methodeName;
+  public void setMethodName(String methodName) {
+    this.methodName = methodName;
   }
 
   public String calculateUniqKey() {

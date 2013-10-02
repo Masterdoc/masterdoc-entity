@@ -7,20 +7,19 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * User: pleresteux
+ * User: pleresteux @
  */
 public class ResourceEntry implements Serializable {
-  private String                 verb;
-  private String                 path;
-  private List<Param>            queryParams;
-  private List<Param>            pathParams;
-  private String                 requestEntity;
-  private String                 responseEntity;
-  private String                 mediaTypeConsumes;
-  private String                 mediaTypeProduces;
-  private CamelConsumeAnnotation CamelConsume;
-  private String                 fullPath;
-  private String                 methodName;
+  private String      verb;
+  private String      path;
+  private List<Param> queryParams;
+  private List<Param> pathParams;
+  private String      requestEntity;
+  private String      responseEntity;
+  private String      mediaTypeConsumes;
+  private String      mediaTypeProduces;
+  private String      fullPath;
+  private String      methodName;
 
   public ResourceEntry() {
     this(WILDCARD, WILDCARD);
@@ -95,14 +94,6 @@ public class ResourceEntry implements Serializable {
 
   public void setMediaTypeProduces(String mediaTypeProduces) {
     this.mediaTypeProduces = mediaTypeProduces;
-  }
-
-  public CamelConsumeAnnotation getCamelConsume() {
-    return CamelConsume;
-  }
-
-  public void setCamelConsume(CamelConsumeAnnotation camelConsume) {
-    CamelConsume = camelConsume;
   }
 
   public void setFullPath(String fullPath) {

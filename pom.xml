@@ -27,8 +27,8 @@
     </developers>
     <scm>
         <connection>scm:git@github.com:Masterdocs/masterdoc-entity.git</connection>
-        <developerConnection>scm:git@github.com:Masterdocs/masterdoc-entity.git</developerConnection>
-        <url>git@github.com:Masterdocs/masterdoc-entity.git</url>
+        <developerConnection>scm:git:ssh://git@github.com:Masterdocs/masterdoc-entity.git</developerConnection>
+        <url>http://github.com/Masterdocs/masterdoc-entity.git</url>
     </scm>
     <properties>
         <jsr311-api.version>1.1.1</jsr311-api.version>

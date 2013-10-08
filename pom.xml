@@ -26,9 +26,9 @@
         </developer>
     </developers>
     <scm>
-        <connection>scm:git@github.com:Masterdocs/masterdoc-entity.git</connection>
-        <developerConnection>scm:git:ssh://git@github.com:Masterdocs/masterdoc-entity.git</developerConnection>
-        <url>http://github.com/Masterdocs/masterdoc-entity.git</url>
+        <url>https://github.com/Masterdocs/masterdoc-entity</url>
+        <connection>scm:git:git@github.com:Masterdocs/masterdoc-entity.git</connection>
+        <developerConnection>scm:git:git@github.com:Masterdocs/masterdoc-entity.git</developerConnection>
     </scm>
     <properties>
         <jsr311-api.version>1.1.1</jsr311-api.version>
@@ -54,4 +54,13 @@
             <version>${jackson.version}</version>
         </dependency>
     </dependencies>
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-release-plugin</artifactId>
+                <version>2.1</version>
+            </plugin>
+        </plugins>
+    </build>
 </project>

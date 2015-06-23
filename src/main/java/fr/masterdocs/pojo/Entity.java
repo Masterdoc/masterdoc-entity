@@ -2,6 +2,7 @@ package fr.masterdocs.pojo;
 
 import org.codehaus.jackson.map.annotate.JsonSerialize;
 
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -11,6 +12,7 @@ import java.util.Map;
 public class Entity extends AbstractEntity {
 	private String superClass;
 	private Map<String, AbstractEntity> fields;
+	private List<String> subType;
 
 	public Entity() {
 	}
@@ -37,5 +39,13 @@ public class Entity extends AbstractEntity {
 
 	public void setSuperClass(String superClass) {
 		this.superClass = superClass;
+	}
+
+	public List<String> getSubType() {
+		return subType;
+	}
+
+	public void setSubType(List<String> subType) {
+		this.subType = subType;
 	}
 }
